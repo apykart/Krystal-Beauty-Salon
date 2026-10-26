@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#5E162A">
+    
+    <!-- SEO Meta Tags -->
+    <title>Krystal Beauty Salon | Ladies Salon in Allahpur, Prayagraj</title>
+    <meta name="description" content="Discover facial, skincare, manicure, pedicure and waxing services at Krystal Beauty Salon, Allahpur, Prayagraj. Contact us to enquire about services and book your appointment.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Krystal Beauty Salon | Ladies Salon in Allahpur, Prayagraj">
+    <meta property="og:description" content="Discover facial, skincare, manicure, pedicure and waxing services at Krystal Beauty Salon, Allahpur, Prayagraj.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* =========================================
+           CSS VARIABLES & RESET
+           ========================================= */
+        :root {
+            /* Colors */
+            --bg-main: #FDFBF7; /* Warm Ivory */
+            --bg-alt: #F4EFEA; /* Soft Cream/Beige */
+            --primary: #5E162A; /* Deep Burgundy */
+            --primary-light: #7A2039;
+            --accent: #B76E79; /* Muted Rose Gold */
+            --text-main: #2C2624; /* Rich Charcoal */
+            --text-muted: #6B6360; /* Dark Brown/Grey */
+            --white: #FFFFFF;
+            
+            /* Typography */
+            --font-heading: 'Cormorant Garamond', serif;
+            --font-body: 'DM Sans', sans-serif;
+            
+            /* Spacing & Layout */
+            --container-width: 1200px;
+            --section-padding: 100px 20px;
+            --radius: 8px;
+            
+            /* Effects */
+            --shadow-sm: 0 4px 12px rgba(0,0,0,0.04);
+            --shadow-md: 0 10px 30px rgba(0,0,0,0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--primary);
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Utilities */
+        .container {
+            width: 100%;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 50px auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-family: var(--font-body);
+            font-weight: 500;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(94, 22, 42, 0.2);
+        }
+
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(94, 22, 42, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+
+        .btn-outline:hover, .btn-outline:focus {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-accent {
+            background-color: var(--accent);
+            color: var(--white);
+        }
+        
+        .btn-accent:hover, .btn-accent:focus {
+            background-color: #a35f69;
+        }
+
+        /* Accessibility & Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* =========================================
+           ANNOUNCEMENT BAR
+           ========================================= */
+        .announcement-bar {
+            background-color: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 10px 15px;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        /* =========================================
+           NAVIGATION
+           ========================================= */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(253, 251, 247, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            padding: 0 20px;
+            max-width: var(--container-width);
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .logo-text {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .logo-sub {
+            font-family: var(--font-body);
+            font-size: 0.65rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-top: 4px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-main);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--accent);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after, .nav-links a:focus::after {
+            width: 100%;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        /* =========================================
+           HERO SECTION
+           ========================================= */
+        .hero {
+            padding-top: 140px;
+            padding-bottom: 80px;
+            background-color: var(--bg-alt);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 500px;
+        }
+
+        .eyebrow {
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 25px;
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 35px;
+            line-height: 1.7;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: rgba(183, 110, 121, 0.1);
+            color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid rgba(183, 110, 121, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .hero-location {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+        }
+
+        .hero-image-wrapper img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Decorative elements */
+        .hero-image-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--accent);
+            border-radius: var(--radius);
+            z-index: -1;
+        }
+
+        /* =========================================
+           OFFER SECTION
+           ========================================= */
+        .offer-section {
+            padding: var(--section-padding);
+            background-color: var(--bg-main);
+            text-align: center;
+        }
+
+        .offer-card {
+            background-color: var(--white);
+            border: 1px solid rgba(183, 110, 121, 0.2);
+            padding: 60px 40px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .offer-card::before {
+            content: '✦';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: var(--accent);
+            opacity: 0.2;
+            font-size: 2rem;
+        }
+
+        .offer-card::after {
+            content: '✦';
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            color: var(--accent);
+            opacity: 0.2;
+            font-size: 2rem;
+        }
+
+        .offer-status {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .status-live { background-color: #e8f5e9; color: #2e7d32; }
+        .status-soon { background-color: #fff3e0; color: #ef6c00; }
+        .status-ended { background-color: #ffebee; color: #c62828; }
+
+        .offer-card h2 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .offer-discount {
+            font-family: var(--font-body);
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--accent);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .offer-dates {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-main);
+            margin-bottom: 20px;
+        }
+
+        .offer-card p {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            max-width: 500px;
+            margin-inline: auto;
+        }
+
+        /* =========================================
+           SERVICES SECTION
+           ========================================= */
+        .services-section {
+            padding: var(--section-padding);
+            background-color: var(--bg-alt);
+        }
+
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .filter-btn {
+            background: transparent;
+            border: 1px solid rgba(94, 22, 42, 0.2);
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            color: var(--text-main);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background-color: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .service-img {
+            height: 220px;
+            width: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-img {
+            transform: scale(1.05);
+        }
+        
+        .service-img-container {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .service-content {
+            padding: 25px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-category {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .service-name {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .service-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .service-pricing {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .price-old {
+            text-decoration: line-through;
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .price-new {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: var(--font-heading);
+        }
+
+        .discount-tag {
+            background-color: rgba(183, 110, 121, 0.1);
+            color: var(--accent);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .service-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: transparent;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            border-radius: var(--radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+        }
+
+        .service-btn:hover, .service-btn:focus {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        /* =========================================
+           WHY CHOOSE US
+           ========================================= */
+        .why-us {
+            padding: var(--section-padding);
+            background-color: var(--bg-main);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .why-item {
+            padding: 30px;
+        }
+
+        .why-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        .why-item h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .why-item p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* =========================================
+           GALLERY
+           ========================================= */
+        .gallery-section {
+            padding: var(--section-padding);
+            background-color: var(--bg-alt);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            height: 350px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* =========================================
+           BOOKING SECTION
+           ========================================= */
+        .booking-section {
+            padding: var(--section-padding);
+            background-color: var(--bg-main);
+        }
+
+        .booking-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .booking-info h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        .booking-info > p {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .info-block {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .info-icon {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-top: 4px;
+        }
+
+        .info-text h4 {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: var(--text-main);
+        }
+
+        .info-text p, .info-text a {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        
+        .info-text a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .booking-actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 35px;
+            flex-wrap: wrap;
+        }
+
+        .map-container {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            height: 100%;
+            min-height: 400px;
+            background-color: var(--bg-alt);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+            border: none;
+        }
+
+        /* =========================================
+           FAQ SECTION
+           ========================================= */
+        .faq-section {
+            padding: var(--section-padding);
+            background-color: var(--bg-alt);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: var(--radius);
+            margin-bottom: 15px;
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        .faq-header {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 20px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-main);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .faq-header:hover {
+            color: var(--primary);
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+            font-size: 1rem;
+            color: var(--accent);
+        }
+
+        .faq-header[aria-expanded="true"] .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: var(--white);
+        }
+
+        .faq-content-inner {
+            padding: 0 25px 20px 25px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* =========================================
+           FINAL CTA & FOOTER
+           ========================================= */
+        .final-cta {
+            padding: 100px 20px;
+            background-color: var(--primary);
+            text-align: center;
+            color: var(--white);
+            position: relative;
+        }
+
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+        }
+
+        .final-cta > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .final-cta h2 {
+            color: var(--white);
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 20px;
+        }
+
+        .final-cta p {
+            color: rgba(255,255,255,0.8);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+        }
+
+        .final-cta .btn {
+            background-color: var(--accent);
+            color: var(--white);
+        }
+
+        .final-cta .btn:hover {
+            background-color: var(--white);
+            color: var(--primary);
+        }
+
+        footer {
+            background-color: #2C2624;
+            color: rgba(255,255,255,0.7);
+            padding: 60px 20px 20px 20px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .footer-tagline {
+            color: var(--accent);
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .footer-info {
+            margin-bottom: 40px;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            font-size: 0.85rem;
+        }
+
+        /* =========================================
+           FLOATING WHATSAPP
+           ========================================= */
+        .floating-wa {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .floating-wa:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+            color: white;
+        }
+
+        /* =========================================
+           RESPONSIVE DESIGN
+           ========================================= */
+        @media (max-width: 992px) {
+            .hero-grid, .booking-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .hero-content {
+                max-width: 100%;
+                text-align: center;
+            }
+            .hero-cta, .hero-location, .hero-badge {
+                justify-content: center;
+            }
+            .hero-image-wrapper::before {
+                display: none;
+            }
+            .hero-image-wrapper img {
+                height: 400px;
+            }
+            .booking-info {
+                text-align: center;
+            }
+            .info-block {
+                text-align: left;
+            }
+            .booking-actions {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: var(--bg-main);
+                flex-direction: column;
+                justify-content: center;
+                transition: var(--transition);
+                box-shadow: var(--shadow-md);
+            }
+            .nav-links.active {
+                left: 0;
+            }
+            .nav-links a {
+                font-size: 1.2rem;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            .nav-right .btn {
+                display: none;
+            }
+            .nav-links .btn {
+                display: block;
+                margin-top: 20px;
+            }
+            .section-padding {
+                padding: 60px 20px;
+            }
+            .offer-card h2 {
+                font-size: 2.5rem;
+            }
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div id="announcement-bar" class="announcement-bar">
+        <!-- Dynamic content injected by JS -->
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">KRYSTAL</span>
+                <span class="logo-sub">Beauty Salon</span>
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#offers">Special Offers</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="btn btn-primary" style="display:none; padding: 10px 20px;">Book Appointment</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <a href="#contact" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Book Appointment</a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="eyebrow">YOUR BEAUTY, YOUR MOMENT</span>
+                    <h1>Beauty That Makes You Feel Like You.</h1>
+                    <p>Take a moment for yourself. Discover personalised beauty care, radiant skin treatments and luxurious self-care at Krystal Beauty Salon, Allahpur, Prayagraj.</p>
+                    
+                    <div class="hero-badge">
+                        <i class="fas fa-gem"></i> Karwa Chauth Special · Flat 40% Off
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Book Your Appointment</a>
+                        <a href="#services" class="btn btn-outline">Explore Our Services</a>
+                    </div>
+
+                    <div class="hero-location">
+                        <i class="fas fa-map-marker-alt text-accent"></i> Allahpur, Prayagraj · Near Naeta Chauraha
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Luxury beauty treatment" onerror="this.src='https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'; this.style.objectFit='cover';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Highlight Section -->
+    <section id="offers" class="offer-section">
+        <div class="container">
+            <div class="offer-card">
+                <div id="offer-status-badge"></div>
+                <h2>Your Karwa Chauth Glow Awaits</h2>
+                <div class="offer-discount">FLAT 40% OFF</div>
+                <div class="offer-dates" id="offer-dates-text">26, 27, 28 & 29 October 2026</div>
+                <p>Make time for yourself with special prices on selected facials, manicure and pedicure packages, and waxing services.</p>
+                <a href="#services" class="btn btn-primary" id="offer-cta">Claim Your Salon Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Premium Services</h2>
+            <p class="section-subtitle">Explore our exclusive range of beauty treatments.</p>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Services</button>
+                <button class="filter-btn" data-filter="facial">Facials & Skin Care</button>
+                <button class="filter-btn" data-filter="mani-pedi">Manicure & Pedicure</button>
+                <button class="filter-btn" data-filter="wax">Wax Services</button>
+            </div>
+
+            <div class="services-grid" id="services-grid">
+                <!-- Service cards injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Krystal -->
+    <section id="about" class="why-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose Krystal?</h2>
+            <p class="section-subtitle">We are dedicated to providing you with an exceptional beauty experience.</p>
+            
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon"><i class="fas fa-spa"></i></div>
+                    <h3>Personalised Beauty Care</h3>
+                    <p>Tailored treatments that focus on your unique skin and beauty needs.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Dedicated Self-Care Experience</h3>
+                    <p>Relax in our hygienic and welcoming environment designed for your comfort.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Convenient Allahpur Location</h3>
+                    <p>Easily accessible near Naeta Chauraha, making your me-time hassle-free.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon"><i class="far fa-calendar-check"></i></div>
+                    <h3>Appointment-Based Service</h3>
+                    <p>Enjoy personalised attention with our scheduled appointment slots.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Beauty Inspiration</h2>
+            <p class="section-subtitle">A glimpse into the luxurious care you can expect at our salon.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Skincare and facial treatments" loading="lazy" onerror="this.style.background='#E8E0D5'">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Manicure and pedicure" loading="lazy" onerror="this.style.background='#E8E0D5'">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Premium salon interiors" loading="lazy" onerror="this.style.background='#E8E0D5'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="contact" class="booking-section">
+        <div class="container">
+            <div class="booking-grid">
+                <div class="booking-info">
+                    <h2>Your Me-Time Starts Here</h2>
+                    <p>Ready for a little self-care? Contact Krystal Beauty Salon to discuss your preferred service and appointment time.</p>
+                    
+                    <div class="info-block">
+                        <div class="info-icon"><i class="fas fa-store"></i></div>
+                        <div class="info-text">
+                            <h4>KRYSTAL BEAUTY SALON</h4>
+                            <p>Allahpur, Prayagraj, Uttar Pradesh<br>Near Naeta Chauraha</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-block">
+                        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="info-text">
+                            <h4>Phone</h4>
+                            <a href="tel:8318498575">8318498575</a>
+                        </div>
+                    </div>
+
+                    <div class="booking-actions">
+                        <a href="#" id="dynamic-wa-btn" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Book on WhatsApp
+                        </a>
+                        <a href="tel:8318498575" class="btn btn-outline">
+                            <i class="fas fa-phone"></i> Call the Salon
+                        </a>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <!-- Responsive Google Maps Embed -->
+                    <iframe src="https://www.google.com/maps/embed/v1/place?q=Krystal%20Beauty%20Salon%2C%20Allahpur%2C%20Near%20Naeta%20Chauraha%2C%20Prayagraj&key=YOUR_API_KEY" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Krystal Beauty Salon Location"></iframe>
+                    <!-- Note: To make the map work perfectly without an API key in a demo, we use the standard embed URL below as fallback if you don't have an API key. -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-header" aria-expanded="false">
+                        Where is Krystal Beauty Salon located?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-content-inner">
+                            Allahpur, Prayagraj, near Naeta Chauraha.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-header" aria-expanded="false">
+                        How can I book an appointment?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-content-inner">
+                            Contact the salon using the WhatsApp or call button on this website.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-header" aria-expanded="false">
+                        Which services are included in the Karwa Chauth offer?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-content-inner">
+                            The listed facial, manicure and pedicure, and waxing services have their respective displayed prices during the promotional period. Confirm the final price and offer eligibility with the salon.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-header" aria-expanded="false">
+                        Is the offer available after October 29?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-content-inner">
+                            The advertised campaign is scheduled for October 26–29, 2026. Contact the salon for any subsequent offers.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-header" aria-expanded="false">
+                        Do I need to confirm the appointment?
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-content-inner">
+                            Yes. Contact the salon directly to confirm the availability of your preferred service and time.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Because You Deserve the Best.</h2>
+            <p>Make a little time for yourself. Let your next beauty appointment be something to look forward to.</p>
+            <a href="#contact" class="btn">Book Your Appointment</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">KRYSTAL BEAUTY SALON</div>
+            <div class="footer-tagline">Look Beautiful ✦ Feel Confident</div>
+            
+            <div class="footer-info">
+                Allahpur, Prayagraj, Near Naeta Chauraha<br>
+                <a href="tel:8318498575" style="color: var(--accent); font-weight: 600;">8318498575</a>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#offers">Special Offers</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; <span id="copyright-year"></span> Krystal Beauty Salon. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" id="floating-wa" class="floating-wa" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // =========================================
+        // 1. CONFIGURATION & DATA
+        // =========================================
+        const config = {
+            phone: '918318498575',
+            offerStart: new Date('2026-10-26T00:00:00+05:30'),
+            offerEnd: new Date('2026-10-29T23:59:59+05:30')
+        };
+
+        const servicesData = [
+            // Facials
+            { id: 1, category: 'facial', name: '03 Facial', desc: 'Detan, Mold Mask, Sheet Mask', oldPrice: 3000, newPrice: 1800, img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+            { id: 2, category: 'facial', name: 'Vitamin C Facial', desc: 'Detan / Bleach, Mold Mask', oldPrice: 2500, newPrice: 1500, img: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+            { id: 3, category: 'facial', name: 'Lotus Facial', desc: 'Detan / Bleach', oldPrice: 1500, newPrice: 900, img: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+            { id: 4, category: 'facial', name: 'Canpiki Facial', desc: 'Bleach / Detan, Mold Mask', oldPrice: 5000, newPrice: 3000, img: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+            { id: 5, category: 'facial', name: 'Anti Aging Facial', desc: 'Detan / Bleach, Mold Mask', oldPrice: 2000, newPrice: 1200, img: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+            { id: 6, category: 'facial', name: 'Fruit Facial', desc: 'Detan / Bleach', oldPrice: 800, newPrice: 400, img: 'https://images.unsplash.com/photo-1556228578-0d85b1a4d571?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+            
+            // Mani-Pedi
+            { id: 7, category: 'mani-pedi', name: 'Crystal Manicure & Pedicure', desc: 'Premium Care | Soft Hands & Feet | Long Lasting Glow', oldPrice: 1800, newPrice: 1080, img: 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+            { id: 8, category: 'mani-pedi', name: 'Chocolate Manicure & Pedicure', desc: 'Chocolate Scrub | Massage | Deep Hydration | Premium Polish', oldPrice: 1200, newPrice: 700, img: 'https://images.unsplash.com/photo-1519014816548-bf5fe059e98b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+            { id: 9, category: 'mani-pedi', name: 'Basic Manicure & Pedicure', desc: 'Clean | Care | Freshness | Shaping | Moisturizing', oldPrice: 800, newPrice: 480, img: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+            
+            // Wax
+            { id: 10, category: 'wax', name: 'Rica Wax — Full Leg', desc: 'Self Care is also a form of Love', oldPrice: 1000, newPrice: 600, img: 'https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+            { id: 11, category: 'wax', name: 'Rica Wax — Full Hand With Under Arms', desc: 'Self Care is also a form of Love', oldPrice: 600, newPrice: 360, img: 'https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+            { id: 12, category: 'wax', name: 'Honey Wax — Full Leg', desc: 'Self Care is also a form of Love', oldPrice: 600, newPrice: 360, img: 'https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+            { id: 13, category: 'wax', name: 'Honey Wax — Full Hand With Under Arms', desc: 'Self Care is also a form of Love', oldPrice: 350, newPrice: 210, img: 'https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+            { id: 14, category: 'wax', name: 'Full Body — Rica Wax', desc: 'Self Care is also a form of Love', oldPrice: 3000, newPrice: 1800, img: 'https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+            { id: 15, category: 'wax', name: 'Full Body — Honey Wax', desc: 'Self Care is also a form of Love', oldPrice: 2000, newPrice: 1200, img: 'https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' }
+        ];
+
+        // =========================================
+        // 2. UTILITY FUNCTIONS
+        // =========================================
+        
+        // Get current date in Asia/Kolkata
+        function getKolkataDate() {
+            const now = new Date();
+            const kolkataString = now.toLocaleString("en-US", {timeZone: "Asia/Kolkata"});
+            return new Date(kolkataString);
+        }
+
+        // Check Offer Status
+        function getOfferStatus() {
+            const now = getKolkataDate();
+            // For testing, uncomment the line below to set a specific date
+            // const now = new Date('2026-10-27T12:00:00+05:30'); 
+            
+            if (now < config.offerStart) return 'soon';
+            if (now > config.offerEnd) return 'ended';
+            return 'live';
+        }
+
+        // Generate WhatsApp URL
+        function getWhatsAppUrl(serviceName = null, price = null) {
+            let msg = '';
+            if (serviceName && price) {
+                msg = `Hello Krystal Beauty Salon! I am interested in ${serviceName}. The displayed price is ₹${price}. Please confirm the current price, offer eligibility and available appointment timings.`;
+            } else {
+                msg = `Hello Krystal Beauty Salon! I would like to enquire about your services and book an appointment. Please share the available timings and current prices.`;
+            }
+            return `https://wa.me/${config.phone}?text=${encodeURIComponent(msg)}`;
+        }
+
+        // =========================================
+        // 3. DOM INITIALIZATION & RENDERING
+        // =========================================
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // --- Update Announcement Bar & Offer Section ---
+            const offerStatus = getOfferStatus();
+            const annBar = document.getElementById('announcement-bar');
+            const statusBadge = document.getElementById('offer-status-badge');
+            const offerDatesText = document.getElementById('offer-dates-text');
+            const offerCta = document.getElementById('offer-cta');
+            const servicesSubtitle = document.querySelector('.services-section .section-subtitle');
+
+            if (offerStatus === 'live') {
+                annBar.innerHTML = `✨ KARWA CHAUTH SPECIAL — FLAT 40% OFF | 26–29 OCTOBER ✨`;
+                statusBadge.innerHTML = `<span class="offer-status status-live">Offer Live Now</span>`;
+                offerDatesText.innerText = `26, 27, 28 & 29 October 2026`;
+                servicesSubtitle.innerText = "Explore our exclusive Karwa Chauth offers. Prices shown are valid from Oct 26-29.";
+            } else if (offerStatus === 'soon') {
+                annBar.innerHTML = `✨ KARWA CHAUTH SPECIAL — FLAT 40% OFF STARTS OCT 26th ✨`;
+                statusBadge.innerHTML = `<span class="offer-status status-soon">Offer Starts Soon</span>`;
+                offerDatesText.innerText = `Starts October 26, 2026`;
+                servicesSubtitle.innerText = "Preview our services. Offer prices will be active from Oct 26-29.";
+            } else {
+                annBar.innerHTML = `Your Beauty, Our Passion — Book Your Appointment Today.`;
+                statusBadge.innerHTML = `<span class="offer-status status-ended">Offer Ended</span>`;
+                offerDatesText.innerText = `This offer has expired.`;
+                offerCta.innerText = "Book a Regular Appointment";
+                servicesSubtitle.innerText = "Explore our premium services. Contact us for current pricing.";
+            }
+
+            // Set default WhatsApp links
+            document.getElementById('floating-wa').href = getWhatsAppUrl();
+            document.getElementById('dynamic-wa-btn').href = getWhatsAppUrl();
+            
+            // Set Map iframe src (using standard embed format as API key is not provided)
+            const mapIframe = document.querySelector('.map-container iframe');
+            mapIframe.src = "https://maps.google.com/maps?q=Krystal%20Beauty%20Salon%2C%20Allahpur%2C%20Near%20Naeta%20Chauraha%2C%20Prayagraj&t=&z=15&ie=UTF8&iwloc=&output=embed";
+
+            // --- Render Services ---
+            const servicesGrid = document.getElementById('services-grid');
+            
+            function renderServices(filter = 'all') {
+                servicesGrid.innerHTML = '';
+                
+                const filteredServices = servicesData.filter(service => 
+                    filter === 'all' || service.category === filter
+                );
+
+                filteredServices.forEach(service => {
+                    // Calculate discount percentage
+                    const discountPercent = Math.round(((service.oldPrice - service.newPrice) / service.oldPrice) * 100);
+                    
+                    // Determine price display based on offer status
+                    let priceHtml = '';
+                    if (offerStatus === 'ended') {
+                        priceHtml = `
+                            <span class="price-new">₹${service.oldPrice}</span>
+                        `;
+                    } else {
+                        priceHtml = `
+                            <span class="price-old">₹${service.oldPrice.toLocaleString('en-IN')}</span>
+                            <span class="price-new">₹${service.newPrice.toLocaleString('en-IN')}</span>
+                            <span class="discount-tag">${discountPercent}% OFF</span>
+                        `;
+                    }
+
+                    // Determine button text
+                    const btnText = offerStatus === 'ended' ? 'Enquire Now' : 'Book This Service';
+                    
+                    // Create card element
+                    const card = document.createElement('div');
+                    card.className = 'service-card';
+                    card.innerHTML = `
+                        <div class="service-img-container">
+                            <img src="${service.img}" alt="${service.name}" class="service-img" loading="lazy" onerror="this.style.display='none'">
+                        </div>
+                        <div class="service-content">
+                            <span class="service-category">${service.category.replace('-', ' & ')}</span>
+                            <h3 class="service-name">${service.name}</h3>
+                            <p class="service-desc">${service.desc}</p>
+                            <div class="service-pricing">
+                                ${priceHtml}
+                            </div>
+                            <button class="service-btn" data-service="${service.name}" data-price="${offerStatus === 'ended' ? service.oldPrice : service.newPrice}">
+                                ${btnText}
+                            </button>
+                        </div>
+                    `;
+                    servicesGrid.appendChild(card);
+                });
+
+                // Add event listeners to the new buttons
+                document.querySelectorAll('.service-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const serviceName = e.target.getAttribute('data-service');
+                        const price = e.target.getAttribute('data-price');
+                        const url = getWhatsAppUrl(serviceName, price);
+                        window.open(url, '_blank', 'noopener,noreferrer');
+                    });
+                });
+            }
+
+            // Initial Render
+            renderServices();
+
+            // --- Filter Logic ---
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    // Update active class
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    e.target.classList.add('active');
+                    
+                    // Filter and render
+                    const filter = e.target.getAttribute('data-filter');
+                    renderServices(filter);
+                });
+            });
+
+            // --- Mobile Menu Logic ---
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const navLinks = document.getElementById('nav-links');
+            
+            mobileMenuBtn.addEventListener('click', () => {
+                const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+                mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+                navLinks.classList.toggle('active');
+                
+                const icon = mobileMenuBtn.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.replace('fa-bars', 'fa-times');
+                } else {
+                    icon.classList.replace('fa-times', 'fa-bars');
+                }
+            });
+
+            // Close mobile menu on link click
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    mobileMenuBtn.querySelector('i').classList.replace('fa-times', 'fa-bars');
+                });
+            });
+
+            // --- FAQ Accordion Logic ---
+            const faqHeaders = document.querySelectorAll('.faq-header');
+            
+            faqHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const isExpanded = header.getAttribute('aria-expanded') === 'true';
+                    
+                    // Close all others
+                    faqHeaders.forEach(h => {
+                        h.setAttribute('aria-expanded', 'false');
+                        h.nextElementSibling.style.maxHeight = null;
+                    });
+
+                    // Toggle current
+                    if (!isExpanded) {
+                        header.setAttribute('aria-expanded', 'true');
+                        const content = header.nextElementSibling;
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    }
+                });
+            });
+
+            // --- Dynamic Copyright Year ---
+            document.getElementById('copyright-year').innerText = new Date().getFullYear();
+
+            // --- Sticky Header (Optional logic for styling on scroll) ---
+            const navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+                } else {
+                    navbar.style.boxShadow = '0 4px 12px rgba(0,0,0,0.04)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
